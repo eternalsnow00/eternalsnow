@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>helloworld</title>
+		<script type="text/javascript" src="js/angular-min.js"></script>
+		<script type="text/javascript" src="js/helloworld.js"></script>
+	</head>
+	<body>
+		<div ng-controller="helloworld">
+			<input ng-model="greeting.text"/>
+			<p>{{ greeting.text }},world</p>
+		</div>
+	</body>
+</html>
