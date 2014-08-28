@@ -7,7 +7,20 @@ mycart.controller("cartControl",function($scope) {
 			   	];
 	$scope.items=items;
 	$scope.remove = function(index){
-		$scope.items.splice(index,1);
+		//$scope.items.splice(index,1);
+		easyDialog.open({
+		  	container : {
+		    	header : '提示',
+		    	content : '是否删除选中内容？',
+		    	yesFn : btn=function(){
+							$scope.items.splice(index,1);
+							return true;
+		    			},
+		   	 	noFn : true
+		  	},
+		  	overlay : false
+
+		});
 	}	
 });
 
