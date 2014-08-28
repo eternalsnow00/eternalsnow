@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>form</title>
+		<script type="text/javascript" src="../js/angular-min.js"></script>
+		<script type="text/javascript" src="../js/form.js"></script>
+	</head>
+	<body>
+		<div>
+			<form ng-controller="formControl">
+				<input type="checkbox" ng-model="youCheckedIt" />
+			</form>
+			<form ng-controller="stratControl">
+				starting:<input  ng-model="funding.startingEstimate">
+				recommendation:{{ funding.needed }}
+			</form>
+		</div>
+	</body>
+</html>
