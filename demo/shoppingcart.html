@@ -18,6 +18,7 @@
 				<input ng-model="item.quantity"/>
 				<span>{{ item.price | currency:"RMB ￥" }}</span>
 				<span>{{ item.price * item.quantity | currency:"RMB ￥" }}</span>
+				<span>{{ item.day | date:"yyyy-MM-dd hh:mm:ss" }}</span>
 				<button ng-click="remove($index)">remove</button>
 			</div>
 		</div>
