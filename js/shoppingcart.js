@@ -13,8 +13,7 @@ mycart.controller("cartControl",function($scope) {
 		    	header : '提示',
 		    	content : '是否删除选中内容？',
 		    	yesFn : btn=function(){
-							$scope.items.splice(index,1);
-							return true;
+							$scope.$apply(function (){$scope.items.splice(index,1);})
 		    			},
 		   	 	noFn : true
 		  	},
