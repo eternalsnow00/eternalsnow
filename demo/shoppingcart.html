@@ -13,7 +13,7 @@
 	<body>
 		<div ng-controller="cartControl">
 			<h1>your order</h1>
-			<div ng-repeat="item in items" class="{{ classname }}">
+			<div ng-repeat="item in items" >
 				<span>{{ item.title }}</span>
 				<input ng-model="item.quantity"/>
 				<span>{{ item.price | currency:"RMB ￥" }}</span>
